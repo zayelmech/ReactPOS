@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="description" content="Punto de venta en linea">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>myPOS</title>
+    <link rel="stylesheet" href="./styles/style.css">
+
+</head>
+
+<body>
+    <div class="main-search">
+
+        <div class="div-content-input">
+            <label for="buscar">Buscar</label>
+            <input class="text-main-input search-text" type="text" id="buscar">
+            <button>Buscar</button>
+        </div>
+        <div class="div-content-input">
+            <label for="unidad">Unidad</label>
+            <input class="text-main-input" type="text" id="unidad" list="unitList">
+            <datalist id="unitList">
+                <option value="kg">kg</option>
+                <option value="gr">gr</option>
+                <option value="L">L</option>
+            </datalist>
+        </div>
+        <div class="div-content-input">
+            <label for="cantidad">Cantidad</label>
+            <button>-</button>
+            <input class="text-main-input" type="text" id="cantidad">
+            <button>+</button>
+        </div>
+        <div class="div-content-input">
+
+            <label for="precioUnit">$ c/u</label>
+            <input class="text-main-input" type="text" id="precioUnit">
+
+        </div>
+        <div class="div-content-input">
+            <label for="subtotal">Sub $</label>
+            <input class="text-main-input" type="text" id="subtotal">
+        </div>
+        <button>Agregar</button>
+    </div>
+
+    <section class="view-section">
+        <textarea name="" id="textArea" cols="30" rows="20"></textarea>
+        <div class="botones">
+            <button>buscar</button>
+        </div>
+
+        <div class="" id="ticket">
+
+        </div>
+    </section>
+
+    <script>
+        var notaTxt = [];
+
+        //console.log(notaTxt);
+
+        var inputText = document.createElement("INPUT");
+        inputText.setAttribute("type", "text");
+        inputText.setAttribute("class", "product-text");
+        inputText.setAttribute("value", "as");
+
+
+        var producto = {
+            nombre: "X",
+            unidad: "kg",
+            cantidad: "",
+            precio: "",
+            subtotal: " "
+        }
+
+        //name.setAttribute("value", producto.nombre.toString());
+        //var unit = inputText;
+        //unit.setAttribute("value", producto.unidad);
+
+        var ticketDiv = document.getElementById("ticket");
+        ticketDiv.appendChild(inputText);
+        //ticketDiv.appendChild(inputText.setAttribute("value", producto.unidad));
+    </script>
+</body>
+
+</html>

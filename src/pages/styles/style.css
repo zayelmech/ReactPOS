@@ -1,0 +1,47 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+.main-search {
+    width: 100vw;
+    height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    font-family: monospace;
+    color: white;
+    font-size: 1.6rem;
+    background-color: rgb(248, 121, 43);
+}
+
+.div-content-input {
+    margin: 0 10px;
+}
+
+.text-main-input {
+    height: 25px;
+    width: 40px;
+}
+
+.search-text {
+    width: 300px;
+}
+
+.view-section {
+    height: 80vh;
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(66, 185, 176);
+}
+
+#textArea {
+    font-size: 2rem;
+    line-height: 2rem;
+}
